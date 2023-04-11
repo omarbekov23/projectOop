@@ -26,5 +26,4 @@ public class Company extends Information {
     public Company() {
     }
 
-
 }
