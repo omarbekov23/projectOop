@@ -25,6 +25,9 @@ public class Course extends Information implements Informations {
         this.numberOfGroups = numberOfGroups;
     }
 
+    public Course(String s, long l, String java, String[] strings) {
+    }
+
     public String []getNumberOfGroups() {
         return numberOfGroups;
     }
@@ -37,11 +40,11 @@ public class Course extends Information implements Informations {
     public void service() {
         System.out.println("Teaching students");
     }
+
     @Override
     public String toString() {
-        return "Course: " + "\n"+
-                "Number Of Groups" + Arrays.toString(numberOfGroups) +"\n"+
-                super.toString();
+        return "Course\n" +
+                "numberOfGroups " + Arrays.toString(numberOfGroups)+"\n"+
+                 super.toString();
     }
-
 }

@@ -1,6 +1,7 @@
 package model;
 
 import abstracty.Information;
+import interfacei.Informations;
 
 /**
  * @Autor Erlan
@@ -8,7 +9,7 @@ import abstracty.Information;
  * 11.04.2023
  * GOOD LUCK FOR YOUR CODING!!!
  */
-public class Groups extends Information {
+public class Groups extends Information implements Informations {
     private int studentNumber;
     public Groups(){
 
@@ -32,9 +33,14 @@ public class Groups extends Information {
     }
 
     @Override
+    public void service() {
+        System.out.println("Деление по направлениям");
+    }
+
+    @Override
     public String toString() {
-        return "Groups: " +
-                "studentNumber: " + studentNumber +"\n"+
+        return "Groups\n" +
+                "studentNumber " + studentNumber +"\n"+
                 super.toString();
     }
 }
