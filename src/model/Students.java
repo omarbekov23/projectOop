@@ -12,7 +12,7 @@ import interfacei.Informations;
 public class Students extends Information implements Informations {
     private String groupName;
     public Students(){
-
+        System.out.println("Учиться");
     }
 
     public Students(String groupName) {
@@ -34,13 +34,13 @@ public class Students extends Information implements Informations {
 
     @Override
     public void service() {
-        System.out.println("  ");
-    }
-    @Override
-    public String toString() {
-        return "Students: " +"\n"+
-                "Group Name: " + groupName + "\n" +
-                super.toString();
+        System.out.println("Программирование");
     }
 
+    @Override
+    public String toString() {
+        return "Students\n" +
+                "groupName " + groupName + "\n" +
+                 super.toString();
+    }
 }

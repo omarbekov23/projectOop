@@ -58,10 +58,10 @@ public abstract class Information {
 
     @Override
     public String toString() {
-        return "Information " +
-                " name " + name +
-                " id " + id +
-                " activity " + activity +
-                " department " + Arrays.toString(department);
+        return "Information\n" +
+                "name " + name + "\n" +
+                "id " + id + "\n" +
+                "activity " + activity + "\n" +
+                "department " + Arrays.toString(department);
     }
 }

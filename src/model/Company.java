@@ -15,19 +15,14 @@ public class Company extends Information implements Informations {
     private String address;
     private String[] numberOfStaff;
 
-    public Company(String address, String[] numberOfStaff) {
-        this.address = address;
-        this.numberOfStaff = numberOfStaff;
-    }
-
     public Company() {
     }
 
     public Company(String name, Long id, String activity, String[] department, String address, String[] numberOfStaff) {
         super(name, id, activity, department);
-        this.address = address;
-        this.numberOfStaff = numberOfStaff;
+
     }
+
 
     public String getAddress() {
         return address;
@@ -53,9 +48,7 @@ public class Company extends Information implements Informations {
 
     @Override
     public String toString() {
-        return "Company: " +
-                "Address: " + address + '\'' +
-                "Number Of Staff: " + Arrays.toString(numberOfStaff) +"\n"+
-                super.toString();
+        return "Company\n" +
+                 super.toString();
     }
 }
